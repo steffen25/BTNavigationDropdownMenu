@@ -256,7 +256,7 @@ open class BTNavigationDropdownMenu: UIView {
         let titleSize = (title as NSString).size(attributes: [NSFontAttributeName:self.configuration.navigationBarTitleFont])
         
         // Set frame
-        let frame = CGRect(x: 0, y: 0, width: titleSize.width + (self.configuration.arrowPadding + self.configuration.arrowImage.size.width)*2, height: self.navigationController!.navigationBar.frame.height)
+        var frame = CGRect(x: 0, y: 0, width: titleSize.width + (self.configuration.arrowPadding + self.configuration.arrowImage.size.width)*2, height: self.navigationController!.navigationBar.frame.height)
         if customFrame != nil {
           frame = customFrame!
         }
